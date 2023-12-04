@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "advent-of-code-2023"
+version = "0.1.0"
+description = ""
+authors = ["MichaelHeinecke <47566635+MichaelHeinecke@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+black = "^23.11.0"
+pre-commit = "^3.5.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
