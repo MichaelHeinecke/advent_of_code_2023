@@ -59,4 +59,12 @@ if __name__ == "__main__":
         for game in games
         if is_game_possible(game, red_cubes, green_cubes, blue_cubes)
     ]
-    print(sum(game_ids))
+    print(f"Sum of possible games: {sum(game_ids)}")
+
+    power_of_cube_set = sum(
+        [
+            game.max_red_cubes * game.max_green_cubes * game.max_blue_cubes
+            for game in games
+        ]
+    )
+    print(f"Power of cube set: {power_of_cube_set}")
